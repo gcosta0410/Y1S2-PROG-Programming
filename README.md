@@ -1,5 +1,6 @@
 Languages/Technologies: C/C++
 
+
 Objectives: 
 - Introduction to C/C++ programming ([Project 1](https://github.com/gcosta0410/Y1S2-PROG-Programacao/tree/main/P1%20-%20Functional%20Game))
 - Introduction to Object Oriented Programming (OOP) ([Project 2](https://github.com/gcosta0410/Y1S2-PROG-Programacao/tree/main/P2%20-%20OOP%20Game))
