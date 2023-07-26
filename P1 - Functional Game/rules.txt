@@ -1,0 +1,42 @@
+-----------------------------------------------------------------------   RULES   -----------------------------------------------------------------------
+The rules of the game are as follow:
+
+1) The player is placed in a maze made up of high-voltage fences and posts. 
+2) There are also some interceptor robots that will try to destroy the player. 
+3) If the player touches the maze or any of these robots, that is the end of the game (and the player!).
+4) The robots are also destroyed when they touch the fences/posts or when they collide with each other (alive or dead).
+5) Every time the player moves in any direction (horizontally, vertically, or diagonally) to a contiguous cell, each robot moves one cell closer to the new player's location, in whichever direction is the shortest path. 
+6) The robots have no vision sensors but they have an accurate odour sensor that allows them to follow the player!
+
+There is one hope: make the robots hit the maze or each other. If all of them are destroyed, the player WINS.
+
+Screen Symbols:
+
+*= electrical fence or post;
+H= player (alive); 
+h= player (dead);
+R= robot (alive);
+r= robot (destroyed=dead/stuck);
+
+Player Controls:
+
+You can move forward, backwards, left or right by pressing W, X, A, D, respectively.
+The player is also able to move diagonally by pressing Q, E, Z, C.
+If the player chooses to, he can stay in place by pressing S.
+The controls can be visualized with the following grid:
+
+------------------
+| Q |   W    | E |
+|---|--------|---|
+| A | Player | D |
+|---|--------|---|
+| Z |   X    | C |
+------------------
+
+Note: The player can exit the game at any time by pressing CTLR + Z (Windows) or CTRL + D (Linux)
+
+Diffuclty Levels:
+
+There are two difficulty levels implemented in the game: Normal and Hard.
+-Normal: the robots are initially attributed a turn order and will always move accordingly to that turn order. Robots will likely collide with eachother before one has the chance to move.
+-Hard: all the robots move at the same time so they can never colide before moving.
