@@ -8,6 +8,7 @@
 #include <vector>
 #include <cctype>
 #include <algorithm>
+#include <filesystem>
 
 // To avoid using std:: (bad practice but won't affect such a small project)
 using namespace std;
@@ -109,7 +110,7 @@ void rules(){
     string line, next;
 
     // Read from the Rules.txt text file
-    ifstream rules("rules.txt");
+    ifstream rules("./data/rules.txt");
 
     // Read the file, line by line
     while (getline(rules, line)){
@@ -153,7 +154,7 @@ void rules(){
 bool foundMaze(int maze, string &maze_name){
 
     // Reset variable in case of valid input but non-existent MAZE_XX.txt file
-    maze_name = "MAZE_";
+    maze_name = "./data/MAZE_";
 
     // Check to see if user input is < 10 to have MAZE_0X.txt format
     if(maze < 10){
@@ -460,9 +461,17 @@ string formatTime(long long ms){
 // Function to check if MAZE_XX_WINNERS.txt exists, if not creates it
 void makeLeaderboard(string maze_name, string formated_time){
 
-    string winner_name, filename = maze_name.substr(0,7) +"_WINNERS.txt";
+    string winner_name, dir = "./data/", filename = dir + maze_name.substr(8,7) +"_WINNERS.txt";
 
     while(true){
+
+        // Check if the folder exists
+        if (!filesystem::exists(dir)) {            
+            // Create the folder
+            if (!filesystem::create_directory(dir)) {
+                std::cerr << "Failed to create directory: " << dir << std::endl;
+            }
+        }
 
         // If MAZE_XX_WINNERS.txt file exists
         if(ifstream(filename)){
@@ -545,7 +554,6 @@ void makeLeaderboard(string maze_name, string formated_time){
                 cerr << "File could not be created" << endl;
             }
             else{
-
                 // Format the file to have a table like shape
                 leaderboard << "------------------------------" << endl;
                 leaderboard << "|    TIME    -     PLAYER    |" << endl;
@@ -764,7 +772,7 @@ void play(){
     string option;
     int x, y, RobotsAlive = 0;
     bool GameEnd = false, died = false, proceed = true;
-    string difficulty, maze, maze_name = "MAZE_";
+    string difficulty, maze, maze_name = "./data/MAZE_";
     vector< vector<char> > maze_map;
     vector< int > robotsPos;
 
@@ -906,7 +914,7 @@ void play(){
                     exit(EXIT_SUCCESS);
                 }
 
-                if(option == "1" or option == "2"){
+                if(option == "1" || option == "2"){
                     break;
                 }
                 else{

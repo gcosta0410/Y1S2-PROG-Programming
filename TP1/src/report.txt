@@ -5,7 +5,7 @@ GROUP MEMBERS:
 - Ricardo Almeida Cavalheiro, up202005103
 
 PROGRAM DEVELOPMENT STATE:
-    Base goals accomplised:
+    Base goals accomplished:
 -All objectives were accomplished.
 
     Changed original aspects:
@@ -14,7 +14,7 @@ This helped us sort the leaderboard way easier than if we had gone with the sugg
 -We used the exit() function, which we were told was a system call and had to check for compatibility issues, worked fine on windows and linux.
 
     Extra stuff added:   
--A second level of difficulty was added to the game: Hard. Normal mode works as requested. Hard mode will move all the robots at the same time so they will never crash into eachother before moving.
+-A second level of difficulty was added to the game: Hard. Normal mode works as requested. Hard mode will move all the robots at the same time so they will never crash into each other before moving.
 -Added a "Play Again" feature at the end of each map so the user doesn't have to go through all the menus again.
 
     Observations:
@@ -22,13 +22,9 @@ This helped us sort the leaderboard way easier than if we had gone with the sugg
 -To run the game on linux it has to be compiled there first since .exe is not a compatible windows-linux file.
 -We tested the program on smaller and bigger mazes, works as expected.
 
-    Ideas not implemented (because we were told not to or just remembered them too late):
--Initially we had a directory system were we'd have everything sorted by mazes but gave that up when told it isn't ideal for project evaluation.
--Make a seperate leaderboard for Normal and Hard mode for each level, all within the same MAZE_XX_WINNERS.txt file.
--We had a python script to create maze templates. We thought about implementing it in C++ but we just gave that up as it wasn't needed. 
-
+   
 MAIN DIFFICULTIES:
--File reading and writting, speacially for the leaderboard updating. That one gave us an headache.
+-File reading and writing, specially for the leaderboard updating. That one gave us an headache.
 -Figuring how to use <chrono> to setup a timer was also troublesome.
 -Often finding ourselves not totally understanding what the other did on certain parts of the code. 
 We believe that whoever tackled a certain aspect of the program first would then have an easier time doing what was related to that aspect afterwards.
