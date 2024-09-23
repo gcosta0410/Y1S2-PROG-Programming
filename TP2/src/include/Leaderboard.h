@@ -16,6 +16,6 @@ class Leaderboard{
 
 	private:
 		std::string maze_name = "MAZE"; //Will have the format MAZEXX
-		std::string filename = "Maze_";
+		std::string filename = "./data/MAZE_";
 };
 #endif //LEADERBOARD_H

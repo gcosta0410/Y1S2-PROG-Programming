@@ -1,6 +1,6 @@
 //T02_G10
-#include "Robot.h"
-#include "Position.h"
+#include "./include/Robot.h"
+#include "./include/Position.h"
 
 int Robot::robotCounter = 0; // Initializing static int variable
 // Default Robot class constructor, not used

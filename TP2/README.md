@@ -1,10 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">Robots Game</h3>
+  <h3 align="center">Robots Game (OOP)</h3>
 
   <p align="center">
-    Robots game in C++
+    Robots game in C++, using OOP
     <br />
   </p>
 </div>
@@ -41,7 +41,7 @@
   <img src="./images/example.png" alt="Description" />
 </div>
 
-With the goal of learning the principles of programming, this project aimed to build a CLI game that could be played by a user.
+With the goal of learning the principles of object oriented programming (OOP), this project aimed to rebuild/refactor the CLI game from [TP1](../TP1/README.md)
 
 ### Built With
 
@@ -54,7 +54,7 @@ With the goal of learning the principles of programming, this project aimed to b
 
 The following prerequisites must be met before being able to run the project:
 
-* Any C++ compiler, in my case, [gcc](https://gcc.gnu.org/)
+* Any C++ compiler, in this case, [gcc](https://gcc.gnu.org/)
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -63,11 +63,12 @@ In order to execute C++ files, they first have to be compiled.
 
 ### Compilation
 
-In a terminal, run the following command inside the `./src` directory to compile the [src/main.cpp](/src/main.cpp) file into an executable.
+In a terminal, run the following command inside the `src` directory to compile the program:
 
 ```sh
-g++ -o main main.cpp
+g++ -I ./include -o main ./*.cpp
 ```
+This command links all the dependencies together into a single executable file.
 
 ### Execution
 
@@ -91,10 +92,10 @@ Group colleagues:
 
 <div id="progress-container" style="border: 1px solid #ddd; border-radius: 5px; width: 200px; height: 20px; position: relative; background-color: #f3f3f3;">
     <div id="progress-bar" style="height: 100%; border-radius: 5px; display: flex; align-items: center;
-        width: 96.50%;
-        background-color: #89F360;
+        width: 85.00%;
+        background-color: #97D655;
     ">
-        <span id="progress-text" style="width: 100%; text-align: center; position: absolute; color: black;"> 19.3 / 20</span>
+        <span id="progress-text" style="width: 100%; text-align: center; position: absolute; color: black;"> 17.0 / 20</span>
     </div>
 </div>
 

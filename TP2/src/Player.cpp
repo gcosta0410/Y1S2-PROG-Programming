@@ -2,8 +2,8 @@
 #include <iostream>
 #include <thread>
 #include <chrono>
-#include "Player.h"
-#include "Utils.h"
+#include "./include/Player.h"
+#include "./include/Utils.h"
 
 // Default Player class constructor, not used
 Player::Player(){}

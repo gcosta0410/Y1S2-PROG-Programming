@@ -1,5 +1,5 @@
 //T02_G10
-#include "Exit.h"  
+#include "./include/Exit.h"  
 
 // Exit class constructor
 Exit::Exit(int row, int col){

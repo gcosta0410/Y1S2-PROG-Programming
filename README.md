@@ -1,22 +1,25 @@
-# Programming
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h3 align="center">PROG</h3>
 
-## Languages/Technologies
-- C/C++
+  <p align="center">
+     Programming
+    <br />
+  </p>
+</div>
 
+<!-- PROJECTS -->
+## Projects
 
-## Objectives: 
-- Introduction to C/C++ programming ([Project 1](./P1%20-%20Functional%20Game))
-- Introduction to Object Oriented Programming (OOP) ([Project 2](./P2%20-%20OOP%20Game))
+- [TP1](./TP1/README.md)
+- [TP2](./TP2/README.md)
 
-## Course info
-- Sigarra: https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459468
+<!-- COURSE INFO -->
+## Course Info
 
-## Teammates
-- [Ricardo Almeida Cavalheiro](https://github.com/RicardoCavalheiro123)
+[![Sigarra][Sigarra]][Sigarra-url]
 
-## Grading
-
-| Project | Grade |
-| ------- | ----- |
-| [1](./P1%20-%20Functional%20Game) | 19.3 / 20.0 |
-| [2](./P2%20-%20OOP%20Game) | 17.0 / 20.0 |
+<!-- MARKDOWN LINKS & IMAGES -->
+[Sigarra]: https://img.shields.io/badge/-Sigarra-9F2D20?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA%2Bf8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABiSURBVHjahM%2BxDYAwDETRT8EiqahhhcySPeiygnfJKl4hG5CjocERwuWTTneGz5MktQgjwhVgDMCkJIEDewdQIWeQpb7WAMv5Atg6gBv1AFl6aotkxXEo8w79DZsjbX76HgAkXFMyCIjzjAAAAABJRU5ErkJggg%3D%3D
+[Sigarra-url]: https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=459468

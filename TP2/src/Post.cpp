@@ -1,5 +1,5 @@
 //T02_G10
-#include "Post.h"
+#include "./include/Post.h"
 // Post class constructor using it's position and char representation
 Post::Post(int row, int col, char symbol){
     this->row = row;

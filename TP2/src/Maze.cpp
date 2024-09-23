@@ -1,6 +1,7 @@
 //T02_G10
-#include "Maze.h"
 #include <vector>
+#include "./include/Maze.h"
+
 // Default Maze class constructor, not used
 Maze::Maze(){}
 // Maze class constructor using maze dimensions

@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include "Leaderboard.h"  
+#include "./include/Leaderboard.h"  
 
 // Default Leaderboard class constructor, not used
 Leaderboard::Leaderboard(){}
@@ -13,18 +13,18 @@ Leaderboard::Leaderboard(int maze){
 
     // Check to see if user input is < 10, to have MAZE_0X.txt format
     if(maze < 10){
-        this->maze_name = "MAZE0" + std::to_string(maze);
+        this->maze_name = "./data/MAZE0" + std::to_string(maze);
         this->filename += "0" + std::to_string(maze) + "_WINNERS.txt";
     }
     else{
-        this->maze_name = "MAZE" + std::to_string(maze);
+        this->maze_name = "./data/MAZE" + std::to_string(maze);
         this->filename += std::to_string(maze) + "_WINNERS.txt";
     }
 }
 // Leaderboard class constructor using the name of the maze file
 Leaderboard::Leaderboard(const std::string& maze_name){
-    this->maze_name += maze_name.substr(5,2);
-	this->filename = maze_name.substr(0,7) +"_WINNERS.txt";
+    this->maze_name += maze_name.substr(12,2);
+	this->filename = "./data/" + maze_name.substr(7,7) +"_WINNERS.txt";
 }
 // Returns true if the MAZE_XX_WINNERS.txt file already exists, false otherwise
 bool Leaderboard::exists(){
@@ -57,6 +57,8 @@ void Leaderboard::update(const std::string &player_name, const std::string &form
     std::string line;
     std::vector<std::string> lb_entries;
     int n_line = 0;
+
+    std::cout << filename << std::endl;
 
     // Open MAZE_XX_WINNERS.txt file in write only mode
     std::ofstream leaderboard_write(filename, std::ios::app);

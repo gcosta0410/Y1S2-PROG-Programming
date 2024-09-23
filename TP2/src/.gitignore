@@ -1,0 +1,55 @@
+# Compiled object files and executables
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Generated files (e.g., by build systems)
+cmake-build-debug/
+cmake-build-release/
+CMakeFiles/
+Makefile
+CMakeCache.txt
+compile_commands.json
+conanbuildinfo.txt
+conaninfo.txt
+conan.lock
+CTestTestfile.cmake
+
+# IDE-specific files (e.g., CLion, VSCode, etc.)
+.idea/
+.vscode/
+*.code-workspace
+*.iml
+
+# Backup, temporary, and swap files
+*~
+*.swp
+*.tmp
+*.bak
+*.d
+
+# Logs and databases
+*.log
+*.db
+*.sql
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Coverage and profiling
+*.gcda
+*.gcno
+*.gcov
+
+# Test binaries
+/tests/*.o
+/tests/*.out
+
+# Build directories
+/build/
+bin/
+lib/

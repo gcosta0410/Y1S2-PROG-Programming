@@ -2,8 +2,8 @@
 #ifndef MAZE_H
 #define MAZE_H
 
-#include "Post.h"
 #include <vector>
+#include "Post.h"
 
 class Maze {
     public:

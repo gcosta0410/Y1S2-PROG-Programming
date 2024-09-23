@@ -6,14 +6,12 @@
 #include <string>
 #include <chrono>
 #include <thread>
-#include "Game.h"
-#include "Player.h"
-#include "Maze.h"
-#include "Post.h"
-#include "Exit.h"
-#include "Timer.h"
-
-
+#include "./include/Game.h"
+#include "./include/Player.h"
+#include "./include/Maze.h"
+#include "./include/Post.h"
+#include "./include/Exit.h"
+#include "./include/Timer.h"
 
 // Game class constructor that takes a string = "MAZE_XX.txt" as parameter
 Game::Game(const std::string& filename){

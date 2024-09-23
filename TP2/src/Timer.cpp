@@ -1,6 +1,6 @@
 //T02_G10
 #include <vector>
-#include "Timer.h"  
+#include "./include/Timer.h"  
 
 // Default Timer class constructor, starts the timer on criation
 Timer::Timer(){

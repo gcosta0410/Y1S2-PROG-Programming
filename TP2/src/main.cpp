@@ -9,16 +9,16 @@
 #include <vector>
 #include <cctype>
 #include <algorithm>
-#include "Robot.h"
-#include "Game.h"
-#include "Maze.h"
-#include "Player.h"
-#include "Position.h"
-#include "Post.h"
-#include "Exit.h"
-#include "Timer.h"
-#include "Leaderboard.h"
-#include "Utils.h"
+#include "./include/Robot.h"
+#include "./include/Game.h"
+#include "./include/Maze.h"
+#include "./include/Player.h"
+#include "./include/Position.h"
+#include "./include/Post.h"
+#include "./include/Exit.h"
+#include "./include/Timer.h"
+#include "./include/Leaderboard.h"
+#include "./include/Utils.h"
 
 // Initializing functions to be able to call them anywhere
 int menu();
@@ -106,7 +106,7 @@ void rules(){
     std::string line, next;
 
     // Read from the Rules.txt text file
-    std::ifstream rules("RULES.txt");
+    std::ifstream rules("./data/rules.txt");
 
     // Read the file, line by line
     while(std::getline(rules, line)){
@@ -191,7 +191,7 @@ void winners(){
 void play(){
 
     bool proceed = true;
-    std::string maze, maze_name = "MAZE_";
+    std::string maze, maze_name = "./data/MAZE_";
 
     // Always running, asking for the maze user wants to play until it is found
     while(true){

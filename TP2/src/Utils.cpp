@@ -1,5 +1,4 @@
 //T02_G10
-#include "Utils.h"
 #include <iostream>
 #include <string>
 #include <iostream>
@@ -8,16 +7,16 @@
 #include <chrono>
 #include <thread>
 #include <cctype>
-#include "Utils.h"
-#include "Player.h"
-#include "Leaderboard.h"
+#include "./include/Utils.h"
+#include "./include/Player.h"
+#include "./include/Leaderboard.h"
 
 
 // Returns true if MAZE_XX.txt file was found, false otherwise
 bool foundMaze(int maze, std::string &maze_name){
 
     // Reset variable in case of valid input but non-existent MAZE_XX.txt file
-    maze_name = "MAZE_";
+    maze_name = "./data/MAZE_";
 
     // Check to see if user input is < 10 to have MAZE_0X.txt format
     if(maze < 10){
